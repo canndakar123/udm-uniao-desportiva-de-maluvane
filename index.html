@@ -3,150 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>União Desportiva de Maluvane | UDM</title>
+    <title>UDM - União Desportiva de Maluvane</title>
     <meta
-      name="description"
+      ="description"
       content="Página oficial da União Desportiva de Maluvane — Maluvane, Distrito de Govuro, Inhambane, Moçambique."
     />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f4f7f4;
-        color: #182018;
-      }
-      header {
-        background: linear-gradient(135deg, #075b2a 20%, yellow, red);
-        color: #fff;
-        text-align: center;
-        padding: 30px 18px;
-      }
-      header img {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        background: #fff;
-        border-radius: 50%;
-        padding: 5px;
-      }
-      h1 {
-        margin: 16px 0 6px;
-        font-size: clamp(28px, 6vw, 48px);
-      }
-      header p {
-        margin: 5px;
-        font-size: 17px;
-      }
-      nav {
-        background: #111;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        flex-wrap: wrap;
-        padding: 10px;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 14px;
-        border-radius: 7px;
-      }
-      nav a:hover {
-        background: #075b2a;
-      }
-      main {
-        max-width: 1050px;
-        margin: auto;
-        padding: 25px 16px;
-      }
-      .hero,
-      .card {
-        background: #fff;
-        border-radius: 16px;
-        padding: 25px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 16px #00000012;
-      }
-      .hero {
-        text-align: center;
-      }
-      .hero h2 {
-        font-size: 30px;
-        margin-top: 0;
-        color: #075b2a;
-      }
-      .hero p {
-        font-size: 18px;
-        line-height: 1.6;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 16px;
-      }
-      .card h3 {
-        color: #075b2a;
-        margin-top: 0;
-      }
-      .tag {
-        display: inline-block;
-        background: #f4c400;
-        color: #111;
-        padding: 7px 12px;
-        border-radius: 20px;
-        font-weight: bold;
-      }
-      footer {
-        background: #111;
-        color: #fff;
-        text-align: center;
-        padding: 25px;
-        margin-top: 30px;
-      }
-      .btn {
-        display: inline-block;
-        background: #075b2a;
-        color: white;
-        text-decoration: none;
-        padding: 12px 18px;
-        border-radius: 8px;
-        margin: 5px;
-      }
-      .muted {
-        color: #667;
-      }
-      .tagline-location {
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- <script src="./scripts/jogadores.js" defer></script> -->
   </head>
   <body>
+    <!-- Header Section -->
     <header>
-      <img src="logo-udm.jpg" alt="Logotipo da União Desportiva de Maluvane" />
+      <img
+        src="logo-udm.jpg"
+        width="150px"
+        alt="Logotipo da União Desportiva de Maluvane"
+      />
+
       <h1>UNIÃO DESPORTIVA DE MALUVANE</h1>
-      <p class="tagline-location">
-        <strong>UDM</strong> • Maluvane, Distrito de Govuro, Inhambane,
-        Moçambique
-      </p>
+
+      <p>Maluvane, Govuro, Inhambane, Moçambique</p>
     </header>
 
+    <!-- Navbar Section -->
     <nav>
-      <a href="#inicio">Início</a><a href="#equipa">Equipa</a
-      ><a href="#campeonato">Campeonato</a> <a href="#noticias">Notícias</a
-      ><a href="#galeria">Galeria</a><a href="#contactos">Contactos</a>
+      <a href="#inicio">Início</a>
+      <a href="#equipa">Equipa</a>
+      <a href="#campeonato">Campeonato</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contactos">Contactos</a>
     </nav>
 
+    <!-- Main Section -->
     <main>
       <section id="inicio" class="hero">
         <span class="tag">PÁGINA OFICIAL DA UDM</span>
+
         <h2>Uma equipa. Uma comunidade. Uma paixão.</h2>
+
         <p>
           Bem-vindo à casa digital da União Desportiva de Maluvane. Aqui os
           adeptos podem acompanhar as novidades da equipa, jogos, resultados,
@@ -156,41 +51,283 @@
 
       <section id="equipa" class="card">
         <h2>⚽ A Nossa Equipa</h2>
+        <!-- Grid Sections -->
         <div class="grid">
           <div class="card">
             <h3>Plantel</h3>
-            <p class="muted">
+            <!-- <p class="muted">
               Espaço reservado para os nomes, números e posições dos jogadores.
-            </p>
+            </p> -->
+
+            <div class="jogadores">
+              <h4>GURDA-REDES</h4>
+              <div class="guarda-redes">
+                <div class="jogador">
+                  <span class="numero-do-jogador">01</span>
+                  <span class="nome-do-jogador">Ernélio Fernando Chicovel</span>
+                  <!-- <span class="posicao-do-jogador">Guarda-redes</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">02</span>
+                  <span class="nome-do-jogador">Sistass Isaias Benzeco</span>
+                  <!-- <span class="posicao-do-jogador">Guarda-redes</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">03</span>
+                  <span class="nome-do-jogador">Anselmo Paulo Manhice</span>
+                  <!-- <span class="posicao-do-jogador">Guarda-redes</span> -->
+                </div>
+              </div>
+
+              <h4>DEFESAS</h4>
+              <div class="defesas">
+                <div class="jogador">
+                  <span class="numero-do-jogador">04</span>
+                  <span class="nome-do-jogador">Américo Sebastião</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">05</span>
+                  <span class="nome-do-jogador">Joaquím Rui</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">06</span>
+                  <span class="nome-do-jogador">Dérito Mário</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">07</span>
+                  <span class="nome-do-jogador">Ferão Francisco</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">08</span>
+                  <span class="nome-do-jogador">Lucas Fernando</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">09</span>
+                  <span class="nome-do-jogador">Jornaldo Antônio</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">10</span>
+                  <span class="nome-do-jogador">Bento Finga</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">11</span>
+                  <span class="nome-do-jogador">Francisco Antônio Pinto</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">12</span>
+                  <span class="nome-do-jogador">Dinho Micas</span>
+                  <!-- <span class="posicao-do-jogador">Defesa</span> -->
+                </div>
+              </div>
+
+              <h4>MÉDIOS</h4>
+              <div class="medios">
+                <div class="jogador">
+                  <span class="numero-do-jogador">13</span>
+                  <span class="nome-do-jogador">Gomes da Marta Joa</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">14</span>
+                  <span class="nome-do-jogador">Ilton Romeu</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">15</span>
+                  <span class="nome-do-jogador">Adilson da Marcela</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">16</span>
+                  <span class="nome-do-jogador">Dércio Domingos</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">17</span>
+                  <span class="nome-do-jogador">Pedro Aroni</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">18</span>
+                  <span class="nome-do-jogador">Judício Jaime Bento</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+                <div class="jogador">
+                  <span class="numero-do-jogador">19</span>
+                  <span class="nome-do-jogador">José Sebastião</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">20</span>
+                  <span class="nome-do-jogador">Francisco Pedro Jacob</span>
+                  <!-- <span class="posicao-do-jogador">Médio</span> -->
+                </div>
+              </div>
+
+              <h4>AVANÇADOS</h4>
+              <div class="avancados">
+                <div class="jogador">
+                  <span class="numero-do-jogador">21</span>
+                  <span class="nome-do-jogador">Simone Ernesto</span>
+                  <!-- <span class="posicao-do-jogador">Avançado</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">22</span>
+                  <span class="nome-do-jogador">Abichaide José Amatsenhe</span>
+                  <!-- <span class="posicao-do-jogador">Avançado</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">23</span>
+                  <span class="nome-do-jogador">Salvador Felipe Simango</span>
+                  <!-- <span class="posicao-do-jogador">Avançado</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">24</span>
+                  <span class="nome-do-jogador">Chelson Fernado Bojane</span>
+                  <!-- <span class="posicao-do-jogador">Avançado</span> -->
+                </div>
+
+                <div class="jogador">
+                  <span class="numero-do-jogador">25</span>
+                  <span class="nome-do-jogador">Moisés Finga Gundane</span>
+                  <!-- <span class="posicao-do-jogador">Avançado</span> -->
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="card">
-            <h3>Comissão Técnica</h3>
-            <p class="muted">
+            <h3>Direção da UDM</h3>
+            <!-- <p class="muted">
               Espaço reservado para treinador, adjuntos e restante equipa
               técnica.
-            </p>
+            </p> -->
+
+            <div class="direcao">
+              <h4>PRESIDENTE</h4>
+              <div>
+                <p>Felipe Peres</p>
+              </div>
+
+              <h4>VICE-PRESIDENTE</h4>
+              <div>
+                <p>Cândido Vilanculo</p>
+              </div>
+
+              <h4>CONSELHEIRO</h4>
+              <div>
+                <p>Horácio Massingue</p>
+              </div>
+
+              <h4>SECRETÁRIO</h4>
+              <div>
+                <p>Atanásio Dimande</p>
+              </div>
+
+              <h4>VICE-SECRETÁRIO</h4>
+              <div>
+                <p>Fernando Daniel Chicovel</p>
+              </div>
+
+              <h4>TESOREIRA</h4>
+              <div>
+                <p>Crizalda Simão</p>
+              </div>
+
+              <h4>M.C. DISCIPLINA</h4>
+              <div>
+                <p>*ainda por definir*</p>
+              </div>
+            </div>
           </div>
+
           <div class="card">
+            <h3>Comissão Técnica</h3>
+
+            <div class="com-tecnica">
+              <h4>PRIMEIRO TREINADOR</h4>
+              <div>
+                <p>Santos Luís</p>
+              </div>
+
+              <h4>SEGUNDO TREINADOR</h4>
+              <div>
+                <p>Armindo Massingue</p>
+              </div>
+
+              <h4>TERCEIRO TREINADOR</h4>
+              <div>
+                <p>Salimo Basílio</p>
+              </div>
+
+              <h4>DELEGADO</h4>
+              <div>
+                <p>Raúl Paulo</p>
+              </div>
+
+              <h4>SUB-DELEGADO</h4>
+              <div>
+                <p>Atanásio Jossai</p>
+              </div>
+
+              <h4>MASSAGISTA</h4>
+              <div>
+                <p>Francisco Dique</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card">
             <h3>História da UDM</h3>
             <p>
               A União Desportiva de Maluvane representa a comunidade de Maluvane
               e reúne jogadores, adeptos e dirigentes em torno do futebol.
             </p>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <section id="campeonato" class="card">
         <h2>🏆 Campeonato</h2>
+
         <div class="grid">
           <div>
             <h3>Próximo jogo</h3>
             <p class="muted">Adicionar adversário, data, hora e campo.</p>
           </div>
+
           <div>
             <h3>Último resultado</h3>
             <p class="muted">Adicionar resultado após cada partida.</p>
           </div>
+
           <div>
             <h3>Classificação</h3>
             <p class="muted">Adicionar a tabela atualizada do campeonato.</p>
@@ -200,6 +337,7 @@
 
       <section id="noticias" class="card">
         <h2>📢 Notícias e Comunicados</h2>
+
         <p>
           Este espaço será usado para divulgar convocatórias, informações dos
           jogos, mensagens aos adeptos, comunicados e novidades da UDM.
@@ -208,6 +346,7 @@
 
       <section id="galeria" class="card">
         <h2>📸 Galeria</h2>
+
         <p class="muted">
           Aqui serão colocadas fotografias dos jogos, treinos, jogadores,
           dirigentes e adeptos.
@@ -216,20 +355,20 @@
 
       <section id="contactos" class="card">
         <h2>📱 Contactos Oficiais</h2>
+
         <p>
           <strong>Localização:</strong> Maluvane, Distrito de Govuro, Província
           de Inhambane, Moçambique.
         </p>
-        <p class="muted">
-          Adicionar aqui o número oficial de WhatsApp e os links das redes
-          sociais da UDM.
-        </p>
       </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-      <strong>UNIÃO DESPORTIVA DE MALUVANE — UDM</strong>
+      <strong>UDM — UNIÃO DESPORTIVA DE MALUVANE</strong>
       <p>Maluvane • Govuro • Inhambane • Moçambique</p>
+      <small>Designed by ManingueBola</small>
     </footer>
   </body>
 </html>
+>

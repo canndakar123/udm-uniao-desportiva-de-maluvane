@@ -10,4 +10,331 @@ main{max-width:1050px;margin:auto;padding:25px 16px}.hero,.card{background:#fff;
 .card h3{color:#075b2a;margin-top:0}.tag{display:inline-block;background:#f4c400;color:#111;padding:7px 12px;border-radius:20px;font-weight:bold}
 footer{background:#111;color:#fff;text-align:center;padding:25px;margin-top:30px}
 .btn{display:inline-block;background:#075b2a;color:white;text-decoration:none;padding:12px 18px;border-radius:8px;margin:5px}.muted{color:#667}
-</style> */
+</style>  •*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7f4;
+  color: #182018;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #075b2a 20%, yellow, red);
+  color: #202b65;
+  text-align: center;
+  padding: 10px;
+}
+header img {
+  width: 200px;
+  /* height: 200px; */
+  height: auto;
+  object-fit: contain;
+  background: #3e3838;
+  border-radius: 50%;
+  padding: 5px;
+  max-width: 100%;
+}
+
+h1 {
+  margin: 5px 0 4px;
+  font-size: clamp(28px, 6vw, 48px);
+}
+header p {
+  margin: 2px;
+  font-size: 17px;
+  color: black;
+}
+
+/* Navbar Styles */
+nav {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+nav a {
+  background: white;
+  color: #0000ff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+}
+nav a:hover {
+  background: #075b2a;
+  color: white;
+}
+
+/* Main Styles */
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 15px 8px;
+}
+.hero,
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 16px #0066ff12;
+}
+.hero {
+  text-align: center;
+}
+.hero h2 {
+  font-size: 28px;
+  margin-top: 0;
+  color: #075b2a;
+}
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.hero .tag {
+  display: inline-block;
+  background: rgb(234, 246, 120);
+  color: #069406;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+/* Grid Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.card h2 {
+  color: #04a748;
+  text-align: center;
+}
+.card h3 {
+  color: #5b0707;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+}
+/* .btn {
+  display: inline-block;
+  background: #075b2a;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin: 5px;
+}
+.muted {
+  color: #667;
+} */
+
+/* Card Data Style */
+
+/* .card .jogadores  {
+  background: blueviolet;
+} */
+
+.card .jogadores h4 {
+  background: rgb(227, 223, 223);
+  margin-bottom: 7px;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid orange;
+}
+
+.jogadores .guarda-redes,
+.jogadores .defesas,
+.jogadores .medios,
+.jogadores .avancados {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.card .jogadores .guarda-redes .jogador,
+.card .jogadores .defesas .jogador,
+.card .jogadores .medios .jogador,
+.card .jogadores .avancados .jogador {
+  border-radius: 8px;
+  padding: 5px;
+}
+.card .jogadores .guarda-redes .jogador {
+  background: green;
+}
+
+.card .jogadores .defesas .jogador {
+  background: blue;
+}
+
+.card .jogadores .medios .jogador {
+  background: yellow;
+}
+
+.card .jogadores .avancados .jogador {
+  background: red;
+}
+
+.card .jogadores .guarda-redes .jogador .numero-do-jogador,
+.card .jogadores .guarda-redes .jogador .nome-do-jogador,
+.card .jogadores .guarda-redes .jogador .posicao-do-jogador,
+.card .jogadores .defesas .jogador .numero-do-jogador,
+.jogadores .defesas .jogador .nome-do-jogador,
+.jogadores .defesas .jogador .posicao-do-jogador,
+.card .jogadores .medios .jogador .numero-do-jogador,
+.jogadores .medios .jogador .nome-do-jogador,
+.jogadores .medios .jogador .posicao-do-jogador,
+.card .jogadores .avancados .jogador .numero-do-jogador,
+.jogadores .avancados .jogador .nome-do-jogador,
+.jogadores .avancados .jogador .posicao-do-jogador {
+  font-size: 15px;
+  color: black;
+  background: white;
+  border-radius: 5px;
+  padding: 1px 4px;
+}
+.card .jogadores .guarda-redes .jogador .nome-do-jogador,
+.card .jogadores .defesas .jogador .nome-do-jogador,
+.card .jogadores .medios .jogador .nome-do-jogador,
+.card .jogadores .avancados .jogador .nome-do-jogador {
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.card .direcao,
+.card .com-tecnica {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+.card .direcao h4,
+.card .com-tecnica h4 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.card .direcao div,
+.card .com-tecnica div {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.card .direcao div p,
+.card .com-tecnica div p {
+  color: white;
+  text-align: center;
+}
+
+.card .direcao h4 {
+  background-color: rgb(163, 163, 163);
+}
+
+/* Contact Styles */
+
+.contact-methods {
+  /* display: flex;
+  /* flex-direction: column; */
+  gap: 12px;
+
+  background-color: red;
+  /*
+  @media (min-width: 768px) {
+    flex-direction: row;
+  } */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 12px;
+  /* width: 100%; */
+
+  /* background: #04a748; */
+}
+
+.contact-item:hover {
+  transform: translateX(4px);
+  background: #f1f5f9;
+}
+
+.contact-item div strong {
+  color: var(--text-light);
+}
+
+.contact-item div span {
+  color: var(--text-light);
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.contact-item .icon #whatsapp {
+  fill: green;
+  stroke-width: 50px;
+  width: 10px;
+}
+
+.contact-item .icon #phone {
+  fill: brown;
+  stroke-width: 50px;
+  width: 10px;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item strong {
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.contact-item span {
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+.link-to-contact-container {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  border-radius: 8px;
+}
+.link-to-contact {
+  /* text-decoration: none; */
+  color: var(--text);
+}
