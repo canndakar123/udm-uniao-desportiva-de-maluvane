@@ -256,19 +256,35 @@ footer {
 .card .direcao h4 {
   background-color: rgb(163, 163, 163);
 }
+/* Gallery Styles */
+.card .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-rows: 50vh; */
+  gap: 10px;
+  justify-items: center;
+}
+
+.card .gallery img {
+  border: 1px solid red;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Contact Styles */
 
 .contact-methods {
-  /* display: flex;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  margin-block: 10px;
 
-  background-color: red;
-  /*
+  /* background-color: red; */
+
   @media (min-width: 768px) {
     flex-direction: row;
-  } */
+  }
 }
 
 .contact-item {
@@ -278,9 +294,9 @@ footer {
   text-decoration: none;
   padding: 8px;
   border-radius: 12px;
-  /* width: 100%; */
-
-  /* background: #04a748; */
+  transition: transform 200ms;
+  width: 100%;
+  background: #c9c7c7;
 }
 
 .contact-item:hover {
@@ -289,11 +305,11 @@ footer {
 }
 
 .contact-item div strong {
-  color: var(--text-light);
+  color: black;
 }
 
 .contact-item div span {
-  color: var(--text-light);
+  color: blue;
   font-size: 16px;
   font-family: monospace;
 }
@@ -301,40 +317,14 @@ footer {
 .contact-item .icon #whatsapp {
   fill: green;
   stroke-width: 50px;
-  width: 10px;
 }
 
 .contact-item .icon #phone {
-  fill: brown;
+  fill: red;
   stroke-width: 50px;
-  width: 10px;
 }
 
 .contact-item div {
   display: flex;
   flex-direction: column;
-}
-
-.contact-item strong {
-  color: var(--secondary);
-  font-size: 14px;
-}
-
-.contact-item span {
-  color: var(--text-light);
-  font-size: 13px;
-}
-
-.link-to-contact-container {
-  margin-top: 10px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--bg);
-  border-radius: 8px;
-}
-.link-to-contact {
-  /* text-decoration: none; */
-  color: var(--text);
 }
