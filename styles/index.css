@@ -328,3 +328,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.web-designer-cont{
+  color: red;
+}
