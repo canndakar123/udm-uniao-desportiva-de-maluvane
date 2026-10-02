@@ -260,9 +260,13 @@ footer {
 .card .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* grid-template-rows: 50vh; */
   gap: 10px;
   justify-items: center;
+
+  /* width: min(1000px, 100%);
+  columns: 3 300px;
+  column-gap: 0.5rem;
+  margin: 0 auto; */
 }
 
 .card .gallery img {
@@ -270,6 +274,17 @@ footer {
   border-radius: 5px;
   max-width: 100%;
   height: auto;
+  /* display: block;
+  margin-bottom: 1rem; */
+  aspect-ratio: 1 / 1;
+}
+
+.grid .inner-card {
+  /* background: red; */
+  max-width: 100%;
+}
+.grid .inner-card img {
+  max-width: 100%;
 }
 
 /* Contact Styles */
@@ -328,6 +343,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.web-designer-cont{
+.web-designer-cont {
   color: red;
 }
