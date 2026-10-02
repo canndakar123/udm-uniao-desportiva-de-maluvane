@@ -257,7 +257,9 @@ footer {
   background-color: rgb(163, 163, 163);
 }
 /* Gallery Styles */
-.card .gallery {
+.card .gallery,
+.card #grid-gallery,
+.card .news-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
@@ -269,7 +271,9 @@ footer {
   margin: 0 auto; */
 }
 
-.card .gallery img {
+.card .gallery img,
+.card #grid-gallery img,
+.card .news-gallery img {
   border: 1px solid red;
   border-radius: 5px;
   max-width: 100%;
@@ -279,13 +283,13 @@ footer {
   aspect-ratio: 1 / 1;
 }
 
-.grid .inner-card {
-  /* background: red; */
+/* .grid .inner-card {
+
   max-width: 100%;
 }
 .grid .inner-card img {
   max-width: 100%;
-}
+} */
 
 /* Contact Styles */
 
